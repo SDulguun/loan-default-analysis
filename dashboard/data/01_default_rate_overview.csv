@@ -1,0 +1,4 @@
+loan_term,completed_loans,defaults,default_rate_pct,avg_loan_amount,avg_interest_rate_pct,avg_annual_income
+ 36 months,1023206,163926.0,16.02,12539.0,12.12,74269.0
+ 60 months,324893,105434.0,32.45,20299.0,16.77,82439.0
+TOTAL,1348099,269360.0,19.98,14409.0,13.24,76238.0

@@ -1,0 +1,28 @@
+fico_band,dti_band,util_band,loans,defaults,default_rate_pct,avg_int_rate_pct,recommended_action
+1. Prime (740+),Low DTI (<15%),Mid Util (30-70%),17183,1252.0,7.29,8.74,B. Approve standard
+1. Prime (740+),Low DTI (<15%),High Util (70%+),1496,129.0,8.62,9.99,B. Approve standard
+1. Prime (740+),Low DTI (<15%),Low Util (<30%),54635,4770.0,8.73,8.82,B. Approve standard
+1. Prime (740+),Mid DTI (15-25%),Mid Util (30-70%),16044,1442.0,8.99,9.14,B. Approve standard
+1. Prime (740+),Mid DTI (15-25%),Low Util (<30%),31975,3105.0,9.71,9.11,B. Approve standard
+1. Prime (740+),Mid DTI (15-25%),High Util (70%+),1466,144.0,9.82,10.27,B. Approve standard
+1. Prime (740+),High DTI (25%+),Mid Util (30-70%),7547,960.0,12.72,10.37,C. Manual review
+1. Prime (740+),High DTI (25%+),High Util (70%+),696,95.0,13.65,11.54,C. Manual review
+2. Near-prime (680-739),Low DTI (<15%),Mid Util (30-70%),148864,21437.0,14.4,11.94,C. Manual review
+1. Prime (740+),High DTI (25%+),Low Util (<30%),13974,2098.0,15.01,10.45,D. Senior review
+2. Near-prime (680-739),Low DTI (<15%),Low Util (<30%),66912,10441.0,15.6,11.86,D. Senior review
+2. Near-prime (680-739),Low DTI (<15%),High Util (70%+),52939,8268.0,15.62,13.09,D. Senior review
+2. Near-prime (680-739),Mid DTI (15-25%),Mid Util (30-70%),176192,32387.0,18.38,12.56,D. Senior review
+2. Near-prime (680-739),Mid DTI (15-25%),High Util (70%+),77493,14617.0,18.86,13.7,D. Senior review
+2. Near-prime (680-739),Mid DTI (15-25%),Low Util (<30%),46479,8845.0,19.03,12.34,D. Senior review
+3. Sub-prime (640-679),Low DTI (<15%),Low Util (<30%),25553,4903.0,19.19,13.99,D. Senior review
+3. Sub-prime (640-679),Low DTI (<15%),Mid Util (30-70%),95994,19500.0,20.31,14.17,D. Senior review
+3. Sub-prime (640-679),Low DTI (<15%),High Util (70%+),55968,11447.0,20.45,14.81,D. Senior review
+2. Near-prime (680-739),High DTI (25%+),Low Util (<30%),21319,5211.0,24.44,13.55,D. Senior review
+2. Near-prime (680-739),High DTI (25%+),Mid Util (30-70%),101516,25043.0,24.67,13.91,D. Senior review
+3. Sub-prime (640-679),Mid DTI (15-25%),Low Util (<30%),14782,3648.0,24.68,14.55,D. Senior review
+2. Near-prime (680-739),High DTI (25%+),High Util (70%+),49316,12258.0,24.86,14.93,D. Senior review
+3. Sub-prime (640-679),Mid DTI (15-25%),High Util (70%+),69557,18062.0,25.97,15.64,E. Decline / restructure
+3. Sub-prime (640-679),Mid DTI (15-25%),Mid Util (30-70%),97150,25440.0,26.19,14.91,E. Decline / restructure
+3. Sub-prime (640-679),High DTI (25%+),Low Util (<30%),6379,1839.0,28.83,15.49,E. Decline / restructure
+3. Sub-prime (640-679),High DTI (25%+),High Util (70%+),40944,13532.0,33.05,16.61,E. Decline / restructure
+3. Sub-prime (640-679),High DTI (25%+),Mid Util (30-70%),53902,18079.0,33.54,16.04,E. Decline / restructure

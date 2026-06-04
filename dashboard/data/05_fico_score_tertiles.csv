@@ -1,0 +1,4 @@
+fico_tertile,completed_loans,defaults,default_rate_pct,fico_min,fico_avg,fico_max,avg_int_rate_pct
+T1,449367,113487.0,25.25,612.0,669.0,677.0,15.08
+T2,449366,95072.0,21.16,677.0,691.0,707.0,13.78
+T3,449366,60801.0,13.53,707.0,735.0,847.5,10.87
