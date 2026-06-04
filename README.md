@@ -1,8 +1,8 @@
 # Loan Default Risk Analysis — Lending Club 2007-2018
 
-End-to-end risk analytics project on **2.3 million Lending Club loans** issued 2007 through Q4 2018. SQL queries answer business questions a Data Analytics team at a consumer lender actually asks; a Power BI dashboard surfaces the results for portfolio monitoring.
+End-to-end risk analytics project on **2.3 million Lending Club loans** issued 2007 through Q4 2018. SQL queries answer business questions a Data Analytics team at a consumer lender actually asks; a Tableau dashboard surfaces the results for portfolio monitoring.
 
-**Stack:** DuckDB (PostgreSQL-flavored SQL) · Power BI · Python (for loading)
+**Stack:** DuckDB (PostgreSQL-flavored SQL) · Tableau Public · Python (for loading)
 
 ---
 
@@ -13,7 +13,7 @@ Consumer lenders make money by deciding who to lend to and pricing the risk that
 1. **Who is the borrower?** — credit score, income, employment, prior credit usage
 2. **What's the loan?** — size, term, purpose, pricing relative to risk
 
-This repo answers both, end-to-end, with SQL and visualizes the result in Power BI.
+This repo answers both, end-to-end, with SQL and visualizes the result in Tableau.
 
 The Lending Club dataset is particularly useful here because it's a **real licensed lender's complete loan book** — every loan funded between 2007 and 2018, with both the application-time features (FICO, DTI, employment) and the realized outcome (paid off vs charged off). That makes it possible to do real risk-calibration work, not just demographic slicing.
 
@@ -27,8 +27,9 @@ loan-default-analysis/
 ├── notebooks/           # Data loading + sanity-check notebooks
 ├── scripts/             # Download + DB build scripts
 ├── dashboard/
-│   ├── loan_risk.pbix   # Power BI Desktop file
-│   └── data/            # CSV exports of query results (PBI inputs)
+│   ├── loan_risk.twbx              # Tableau workbook
+│   ├── loan_default_powerbi.xlsx   # Consolidated 10-sheet Excel (Tableau input)
+│   └── data/                        # CSV exports of query results
 ├── screenshots/         # Dashboard page screenshots
 ├── data/
 │   ├── raw/             # Lending Club CSVs (gitignored)
@@ -64,7 +65,7 @@ python scripts/run_all_queries.py
 ```
 
 ### 4. Open the dashboard
-Open `dashboard/loan_risk.pbix` in Power BI Desktop (Windows). Data sources point to `dashboard/data/*.csv`.
+Open `dashboard/loan_risk.twbx` in [Tableau Public](https://public.tableau.com/) (free, Mac/Windows). The workbook reads from `dashboard/loan_default_powerbi.xlsx`, which is a consolidated 10-sheet Excel built from the CSV exports (one sheet per SQL query). Regenerate with `python scripts/build_powerbi_excel.py`.
 
 ---
 
