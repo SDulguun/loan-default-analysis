@@ -1,10 +1,8 @@
 """Consolidate the 10 CSV query exports into a single Excel workbook
-with one named sheet per query — designed for one-shot Power BI Service
-upload.
+with one named sheet per query — used as the Tableau data source.
 
-Output: dashboard/loan_default_powerbi.xlsx
-
-Usage: python scripts/build_powerbi_excel.py
+Output: dashboard/loan_default_tableau.xlsx
+Usage: python scripts/build_tableau_excel.py
 """
 
 from pathlib import Path
