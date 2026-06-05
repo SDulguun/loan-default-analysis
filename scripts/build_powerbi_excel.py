@@ -10,7 +10,7 @@ import pandas as pd
 
 PROJECT_DIR = Path(__file__).resolve().parent.parent
 CSV_DIR = PROJECT_DIR / "dashboard" / "data"
-OUT_PATH = PROJECT_DIR / "dashboard" / "loan_default_powerbi.xlsx"
+OUT_PATH = PROJECT_DIR / "dashboard" / "loan_default_tableau.xlsx"
 
 # Map CSV filename -> sheet name (max 31 chars per Excel constraint)
 SHEET_MAP = {
