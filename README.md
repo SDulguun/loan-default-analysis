@@ -86,14 +86,29 @@ Open `dashboard/loan_risk.twbx` in [Tableau Public](https://public.tableau.com/)
 
 ---
 
-## Dashboard pages
+## Dashboard
 
-1. **Portfolio Overview** — total loans, default rate, volume by term and grade
-2. **Borrower Segmentation** — purpose × home ownership, income × employment heatmap
-3. **Risk Drivers** — DTI curve, FICO tertiles, grade calibration, revolving utilization
-4. **Trends & Geographic** — quarterly vintage cohorts (default rate trend), state-level risk map, combined decision matrix
+Four pages built in Tableau Public. The packaged workbook (`dashboard/loan_risk.twbx`) is in the repo — open it with [Tableau Reader](https://www.tableau.com/products/reader) (free) or [Tableau Public Desktop](https://www.tableau.com/products/public) to interact with the visuals directly.
 
-Screenshots in [`screenshots/`](./screenshots).
+### Page 1 — Portfolio Overview
+Total loans, defaults, default rate, and default-rate split by 36- vs 60-month term.
+
+![Portfolio Overview](./screenshots/page_1_portfolio_overview.png)
+
+### Page 2 — Borrower Segmentation
+Default rate matrix by loan purpose × home ownership, and the income-decile × employment-tenure heatmap. Renters carry the highest risk across every purpose; small business loans for renters default at 33%.
+
+![Borrower Segmentation](./screenshots/page_2_borrower_segmentation.png)
+
+### Page 3 — Risk Drivers
+DTI risk curve, FICO tertile lift, revolving utilization, and the **grade-calibration chart** showing realized returns going negative for grades E-G despite 21-28% interest rates.
+
+![Risk Drivers](./screenshots/page_3_risk_drivers.png)
+
+### Page 4 — Trends, Geography & Decision Matrix
+Quarterly vintage cohort default-rate trend (raw + 4Q rolling), filled US map by state, top 10 highest-risk states, and the combined FICO × DTI × Utilization credit-policy decision matrix.
+
+![Trends, Geography & Matrix](./screenshots/page_4_trends_geo_matrix.png)
 
 ---
 
